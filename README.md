@@ -4,9 +4,9 @@
 
 ### How To Use ###
 
- * 1.Editting "config.inc.php" as you like.
- * 2.Uploading the whole project to your host, then upload your code case to "/cases/year/month".
- * 3.visit your project url, and update the codes data, progarm'll auto redirect to your website, eg:
+ 1. Editting "config.inc.php" as you like.
+ 2. Uploading the whole project to your host, then upload your code case to "/cases/year/month".
+ 3. visit your project url, and update the codes data, progarm'll auto redirect to your website, eg:
     # the token is define in config.inc.php
     http://yourwebsite.com/?do=update&token=123
 
