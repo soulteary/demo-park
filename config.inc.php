@@ -9,7 +9,7 @@
 define("SiteTitle", "soulteary's code playground");
 define("ListDesc", "soulteary's code snippet list.");
 define("ProjectInfoFile","demo.json");
-define("DirRootPath", dirname(__FILE__) . "\\" );
+define("DirRootPath", dirname(__FILE__) . "/" );
 define("CaseDir", "cases");
 define("UriRootPath", "http://" . $_SERVER["HTTP_HOST"] . "/");
 
