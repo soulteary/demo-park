@@ -13,6 +13,6 @@ define("DirRootPath", dirname(__FILE__) . "/" );
 define("CaseDir", "cases");
 define("UriRootPath", "http://" . $_SERVER["HTTP_HOST"] . "/");
 
-
+/** token for update data */
 define("token", 123);
 define("sinceYear", 2012);
