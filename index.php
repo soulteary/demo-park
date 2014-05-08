@@ -30,6 +30,13 @@ include('config.inc.php');
         a {
             color: #c75f3e;
         }
+
+        a:hover {
+            color: #FF916F;
+        }
+        p {
+            margin: 0;
+        }
         table {
             position: relative;
             margin-top: 100px;
@@ -59,17 +66,40 @@ include('config.inc.php');
         th:hover {
             background-color: #bfe0e3;
         }
-        tr{
+        tr {
             background: #fff;
+            color: #4f6b72;
         }
         tr:hover {
             background: #ededed;
+            color: #659BA8;
         }
         td {
             border-right: 1px solid #c1dad7;
             border-bottom: 1px solid #c1dad7;
             padding: 6px 6px 6px 12px;
-            color: #4f6b72;
+        }
+        .update-time {
+            padding: 5px 0 0;
+            text-align: left;
+            color: #CECECE;
+        }
+        .col-id {
+            padding-left: 6px;
+            text-align: center;
+        }
+        .col-opt {
+            padding-left: 6px;
+            text-align: center;
+        }
+        .c-name, .c-desc {
+            width: 220px;
+        }
+        .text-overflow {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -79,24 +109,25 @@ include('config.inc.php');
         <caption><?=ListDesc?></caption>
         <thead>
             <tr>
-                <th abbr="ID">#</th>
+                <th abbr="ID" class="col-id">#</th>
                 <th abbr="Date">Date</th>
                 <th abbr="Name">Name</th>
                 <th abbr="Desc">Desc</th>
-                <th abbr="Url">Url</th>
+                <th abbr="Url" class="col-opt">Url</th>
             </tr>
         </thead>
         <tbody>
         {{each data.data as item index}}
         <tr>
-            <td>{{index+1}}</td>
+            <td class="col-id">{{index+1}}</td>
             <td>{{item.date}}</td>
-            <td>{{item.name}}</td>
-            <td>{{item.desc}}</td>
-            <td><a href="{{data.host}}{{item.path}}" title="{{item.desc}}" target="_blank">View</a></td>
+            <td><p class="c-name text-overflow">{{item.name}}</p></td>
+            <td><p class="c-desc text-overflow">{{item.desc}}</p></td>
+            <td class="col-opt"><a href="{{data.host}}{{item.path}}" title="View: {{item.desc}}" target="_blank">View</a></td>
         </tr>
         {{/each}}
         </tbody>
+        <caption align="bottom" class="update-time">Last Modified:{{data.lastModified}}</caption>
         </table>
     </script>
     <?php
@@ -181,7 +212,7 @@ include('config.inc.php');
         }
     } else {
         ?>
-<script type="text/javascript">Y.data = <?php include(DirRootPath . ProjectInfoFile);?>;Y.host="<?=UriRootPath;?>";</script>
+<script type="text/javascript">Y.data = <?php include(DirRootPath . ProjectInfoFile);?>;Y.host="<?=UriRootPath;?>";Y.lastModified = "<?=date("Y/m/d",filemtime(DirRootPath . ProjectInfoFile));?>";</script>
         <?php
     }
     ?>
