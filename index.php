@@ -7,7 +7,7 @@
  */
 // load config.
 include('config.inc.php');
-
+date_default_timezone_set('Asia/Hong_Kong');
 ?><!doctype html>
 <html lang="en-US">
 <head>
