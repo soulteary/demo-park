@@ -1,6 +1,6 @@
 ## Code Park ##
 
->>一个简单(简陋)的代码展示工具。
+> 一个简单(简陋)的代码展示工具。
 
 ### 如何使用 ###
 
@@ -12,7 +12,7 @@
 
 ### 演示DEMO ###
 
-[演示例子](http://demos.soulteary.com)
+[演示例子](http://demo.soulteary.com)
 
 ### 界面截图 ###
 
@@ -22,7 +22,7 @@
 
 ## Code Park ##
 
->>A Simple Code Playground
+> A Simple Code Playground
 
 ### How To Use ###
 
@@ -34,7 +34,7 @@
 
 ### Demo ###
 
-[Demo Site](http://demos.soulteary.com)
+[Demo Site](http://demo.soulteary.com)
 
 ### Snapshot ###
 
