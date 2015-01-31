@@ -1,0 +1,83 @@
+body {
+    font: normal 11px/1.5 "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    background: #E6EAE9;
+    min-width: 700px;
+    margin: 0;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
+}
+a {
+    color: #c75f3e;
+}
+a:hover {
+    color: #FF916F;
+}
+p {
+    margin: 0;
+}
+table {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 50%;
+    width: 700px;
+    left: -350px;
+    padding: 0;
+    border-left: 1px solid #c1dad7;
+}
+caption {
+    padding: 0 0 5px 0;
+    width: 700px;
+    text-align: right;
+    font-style: italic;
+}
+th {
+    font-weight: bold;
+    color: #4f6b72;
+    border: 1px solid #c1dad7;
+    border-left: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 6px 6px 6px 12px;
+    background-color: #cae8ea;
+}
+th:hover {
+    background-color: #bfe0e3;
+}
+tr {
+    background: #fff;
+    color: #4f6b72;
+}
+tr:hover {
+    background: #ededed;
+    color: #659BA8;
+}
+td {
+    border-right: 1px solid #c1dad7;
+    border-bottom: 1px solid #c1dad7;
+    padding: 6px 6px 6px 12px;
+}
+.update-time {
+    padding: 5px 0 0;
+    text-align: left;
+    color: #CECECE;
+}
+.col-id {
+    padding-left: 6px;
+    text-align: center;
+}
+.col-opt {
+    padding-left: 6px;
+    text-align: center;
+}
+.c-name, .c-desc {
+    width: 220px;
+}
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
