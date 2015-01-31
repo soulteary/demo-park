@@ -4,10 +4,10 @@
 
 ### 如何使用 ###
 
- 1. 编辑 "config.inc.php" 文件，修改成你想要的参数。
+ 1. 根据自己的情况，编辑 "***index.php***" 以及 "***app.php***" 文件。
+    - 请先修改 "***index.php***" 文件中的 ***Token*** 以及 "***app.php***" 文件中的 ***UriRootPath***。
  2. 上传项目文件到你的网站目录，并且将你想要展示的代码文件上传至 "/cases/年份/月份" 目录下。
- 3. 访问你的项目地址，更新静态索引数据，程序将会自动转向到网站地址:
-    - 更新项目所需要的***token***被定义在```index.php```文件中：http://yourwebsite.com/?do=update&token={{YOUR_TOKEN}}
+ 3. 刷新缓存文件，访问你的站点地址：http://yourwebsite.com/?do=update&token={{YOUR_TOKEN}}
 
 ### 演示DEMO ###
 
@@ -15,7 +15,12 @@
 
 ### 界面截图 ###
 
+#### 亮色主题
+
 ![例子截图](./snapshot/snapshot.png)
+
+#### 暗色主题
+
 ![例子截图 暗色皮肤](./snapshot/snapshot-dark.jpg)
 
 ---
@@ -26,10 +31,10 @@
 
 ### How To Use ###
 
- 1. Editting "config.inc.php" as you like.
+ 1. Editing the "***index.php***" and "***app.php***" as you like.
+    - Please change the ***Token*** in "***index.php***" and ***UriRootPath*** in "***app.php***".
  2. Uploading the whole project to your host, then upload your code case to "/cases/year/month".
- 3. Visiting your project url, and update the codes data, program will auto redirect to your website, eg:
-    - the ***token*** is define in```index.php```http://yourwebsite.com/?do=update&token={{YOUR_TOKEN}}
+ 3. Flushing the page cache by visit url: http://yourwebsite.com/?do=update&token={{YOUR_TOKEN}}
 
 ### Demo ###
 
@@ -37,5 +42,10 @@
 
 ### Snapshot ###
 
+#### Theme - Light
+
 ![Demo Picture](./snapshot/snapshot.png)
+
+#### Theme - Dark
+
 ![Demo Picture - Dark Skin](./snapshot/snapshot-dark.jpg)
